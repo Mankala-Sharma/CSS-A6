@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:white;
+    background: url(./shara\ desert.jpg);
+    background-size: cover;
+
+}
+
+.nav-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo-holder{
+     margin-left: 30px;
+     margin-top: 10px;
+}
+
+.nav-bar{
+    margin-top: 10px;
+   margin-right: 30px;
+}
+.nav-bar a{
+    color:white;
+    margin-right:50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+    .toggle{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 55px;
+        background-image: url(./fast-backward.png);
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+    }
+    .toggle:hover{
+        background-image: url(./fast-backward.gif);
+    
+    }
+    
+.mid-container{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding: 20px;
+}
+.left-container{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.left-container h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left-container p{
+    font-size: 18px;
+    margin-top: 10px; 
+}
+
+.button{
+    background-color: white;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: medium;
+    margin-top:25px;
+    width:180px;
+    height: 40px;
+    border: 0px solid white;
+    border-radius: 30px;
+}
+.right-container{
+ margin-right: 30px;
+
+ 
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 250px 250px;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+.grid-item{
+    background-size: cover;
+    border-radius: 25px;
+    padding-top: 25px;
+    font-size: small;
+    padding-left: 5px;
+}
+
+@media (min-width:320px) and (max-width:480px){
+
+    .img-container{
+        display: grid;
+        grid-template-columns: 190px;
+        grid-template-rows: 210px 210px 210px 210px;
+        row-gap: 25px;
+        column-gap: 25px; 
+        margin: 10px;
+
+    }
+    .mid-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width:481px) and (max-width:768px){
+    .img-container{
+        display: grid;
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 220px 220px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .nav-bar{
+        margin-right: 10px;
+    }
+    .nav-container{
+       
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    .left-container{
+        margin-left: 10px;
+    }
+   
+}
